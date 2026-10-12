@@ -1,0 +1,61 @@
+{
+  "dosky": [
+    {
+      "kg": 60,
+      "pozn": "najľahšia"
+    },
+    {
+      "kg": 160,
+      "pozn": ""
+    },
+    {
+      "kg": 280,
+      "pozn": ""
+    },
+    {
+      "kg": 400,
+      "pozn": "najťažšia"
+    }
+  ],
+  "naradie": [
+    {
+      "nazov": "Vibračný pech (noha)",
+      "text": "Na hutnenie v úzkych ryhách a pri múroch, kam sa doska nezmestí."
+    },
+    {
+      "nazov": "Rezačky",
+      "text": "Opýtajte sa na typ a voľný termín."
+    },
+    {
+      "nazov": "Ďalšie náradie",
+      "text": "Opýtajte sa, čo máme práve voľné."
+    }
+  ],
+  "stroje": [
+    {
+      "stroj": "Bager",
+      "param": "1 t",
+      "naco": "menšie výkopy a ryhy, úzke dvory"
+    },
+    {
+      "stroj": "Bager",
+      "param": "2 t",
+      "naco": "výkopy pre základy a prípojky"
+    },
+    {
+      "stroj": "Bager",
+      "param": "3,5 t",
+      "naco": "väčšie výkopy a terénne úpravy"
+    },
+    {
+      "stroj": "Nakladač",
+      "param": "",
+      "naco": "presun a nakladanie zeminy a štrku"
+    },
+    {
+      "stroj": "Autodoprava",
+      "param": "do 3,5 t",
+      "naco": "dovoz štrku a piesku, odvoz zeminy"
+    }
+  ]
+}

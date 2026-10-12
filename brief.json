@@ -1,0 +1,39 @@
+{
+ "slug": "sk-tomhouse",
+ "zdroj_url": null,
+ "firma": "TomHouse s. r. o.",
+ "obor": ["zemné a výkopové práce", "zámková dlažba", "prenájom stavebnej techniky a náradia", "autodoprava"],
+ "mesto": "Bohunice (okres Ilava)",
+ "jazyk": "sk",
+ "ico": "56682913",
+ "ares": "RPO api.statistics.sk (id 18357438): TomHouse s. r. o., Pri Potoku 97/32, 018 52 Bohunice, vznik 8. 2. 2025, konateľ Tomáš Holba, hlavná činnosť SK NACE 4312 Zemné práce",
+ "kontakty": {
+  "email": "tomasholba123@gmail.com",
+  "telefon": "+421 948 737 273",
+  "adresa": "Pri Potoku 97/32, 018 52 Bohunice"
+ },
+ "cielova_skupina": "majitelia domov a pozemkov v okolí Ilavy (výkop základov, prípojky, dvor/príjazd zo zámkovej dlažby), malé stavebné firmy a kutili, ktorí si požičiavajú vibračnú dosku, pech alebo rezačku",
+ "ton": "priamy, praktický remeselník; píše krátko. Nechce rekonštrukcie (výslovne). Páči sa mu tmavé pozadie z prvej ukážky.",
+ "logo": null,
+ "barvy": {"poznamka": "klient nemá logo ani farby; jediná preferencia: čierne/tmavé pozadie (mail UID 9709)", "doporucene": {"bg": "#14120f", "text": "#efe9df", "accent": "#e2672c"}},
+ "fotky": [],
+ "fakta": [
+  {"fakt": "TomHouse s. r. o., IČO 56682913, Pri Potoku 97/32, 018 52 Bohunice", "zdroj": "RPO api.statistics.sk"},
+  {"fakt": "Konateľ Tomáš Holba; vznik 8. 2. 2025", "zdroj": "RPO"},
+  {"fakt": "Hlavná činnosť: zemné práce (SK NACE 4312)", "zdroj": "RPO statisticalCodes"},
+  {"fakt": "Živnosti: prípravné práce k realizácii stavby; dokončovacie stavebné práce exteriérov; nákladná cestná doprava do 3,5 t; prenájom a požičiavanie hnuteľných vecí", "zdroj": "RPO"},
+  {"fakt": "Zameranie: zemné a výkopové práce, zámková dlažba, prenájom stavebnej techniky; rekonštrukcie NIE", "zdroj": "mail Holba UID 9709, 8. 10. 2026"},
+  {"fakt": "Technika: bagre 1 t, 2 t a 3,5 t, nakladač(e) (klient píše „unce nakladače“ – pravdepodobne UNC, overiť), autodoprava", "zdroj": "mail UID 9709"},
+  {"fakt": "Prenájom: vibračné dosky (žaby) 60, 160, 280 a 400 kg, vibračný pech (noha), rezačky „atď.“", "zdroj": "mail UID 9709"},
+  {"fakt": "Telefón +421 948 737 273 zverejnený v Zlatých stránkach", "zdroj": "kampaň sk-stavba-remesla recipients.csv (Zlaté stránky)"},
+  {"fakt": "Pôsobnosť: Bohunice / Ilava (región, nie presný okruh)", "zdroj": "RPO adresa, Zlaté stránky „Ilava“"}
+ ],
+ "chybi": [
+  "vlastné fotky techniky a hotových prác (výkopy, dlažba)",
+  "oblasť pôsobenia (okres / okolie)",
+  "kontakty na web (telefón a e-mail potvrdiť)",
+  "nakladač: typ (UNC?) a či ide o 1 alebo viac strojov",
+  "celý zoznam náradia na prenájom (rezačky – na betón/asfalt/dlažbu?)",
+  "logo, ak nejaké má"
+ ]
+}

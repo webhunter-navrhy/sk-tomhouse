@@ -1,0 +1,40 @@
+{
+  "slug": "sk-tomhouse",
+  "nazev": "TomHouse s. r. o.",
+  "url": "https://webhunter-navrhy.github.io/sk-tomhouse/",
+  "base": "/sk-tomhouse/",
+  "lang": "sk",
+  "popis": "Zemné a výkopové práce, zámková dlažba a požičovňa techniky v Bohuniciach pri Ilave. Bagre 1–3,5 t, vibračné dosky 60–400 kg, autodoprava.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "uvod-vykop.jpg",
+  "logo": "",
+  "theme_color": "#14120f",
+  "typ": "HomeAndConstructionBusiness",
+  "ico": "56682913",
+  "kontakt": {
+    "email": "tomasholba123@gmail.com",
+    "telefon": "+421 948 737 273",
+    "adresa": {
+      "ulice": "Pri Potoku 97/32",
+      "psc": "018 52",
+      "mesto": "Bohunice",
+      "zeme": "SK"
+    }
+  },
+  "konatel": "Tomáš Holba",
+  "oblast": "Bohunice a okolie Ilavy",
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Dopyt z webu TomHouse"
+  },
+  "nav": [
+    {"text": "Práce", "href": "#prace"},
+    {"text": "Požičovňa", "href": "#pozicovna"},
+    {"text": "Kontakt", "href": "#kontakt"}
+  ]
+}

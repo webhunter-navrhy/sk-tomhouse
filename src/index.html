@@ -1,0 +1,120 @@
+{% extends "_base.html" %}
+{% set titulek = 'Zemné práce, dlažba a požičovňa techniky Bohunice, Ilava | TomHouse' %}
+{% set cesta = '' %}
+{% block obsah %}
+
+<section class="uvod">
+  <div class="uvod__foto">
+    {{ img('uvod-vykop.jpg', 'Minibager kope ryhu v záhrade pri rodinnom dome', sizes='(min-width: 64rem) 62vw, 100vw') }}
+  </div>
+  <div class="uvod__text">
+    <p class="uvod__kde">{{ site.oblast }}</p>
+    <h1>Zemné práce, zámková dlažba a&nbsp;požičovňa techniky</h1>
+    <p class="uvod__perex">Vykopeme, podložíme, zhutníme a&nbsp;vydláždime. Vlastnými bagrami od 1&nbsp;do 3,5&nbsp;t. A&nbsp;keď si to chcete urobiť sami, požičiame Vám vibračnú dosku, pech aj rezačku.</p>
+    <div class="uvod__akcie">
+      <a class="tlacidlo" href="#kontakt">Poslať dopyt</a>
+      <a class="odkaz" href="#pozicovna">Čo si môžete požičať</a>
+    </div>
+  </div>
+</section>
+
+<section class="rez" id="prace" aria-labelledby="rez-nadpis">
+  <div class="rez__hlava">
+    <h2 id="rez-nadpis">Od výkopu po dlažbu</h2>
+    <p>Dvor alebo príjazd stojí na tom, čo nie je vidieť. Urobíme celý rez pozemkom jednou partiou a&nbsp;vlastnou technikou, takže nik nečaká na nikoho.</p>
+  </div>
+  <ol class="rez__vrstvy" role="list">
+    <li class="vrstva vrstva--dlazba">
+      <span class="vrstva__pas" aria-hidden="true"></span>
+      <a class="vrstva__popis" href="#dlazba"><b>Zámková dlažba</b><span>kladenie a rezanie</span></a>
+    </li>
+    <li class="vrstva vrstva--lozko">
+      <span class="vrstva__pas" aria-hidden="true"></span>
+      <a class="vrstva__popis" href="#dlazba"><b>Lôžko</b><span>drvené kamenivo, zarovnané do roviny</span></a>
+    </li>
+    <li class="vrstva vrstva--strk">
+      <span class="vrstva__pas" aria-hidden="true"></span>
+      <a class="vrstva__popis" href="#dlazba"><b>Štrkový podklad</b><span>dovezený a zhutnený vibračnou doskou</span></a>
+    </li>
+    <li class="vrstva vrstva--zemina">
+      <span class="vrstva__pas" aria-hidden="true"></span>
+      <a class="vrstva__popis" href="#vykopy"><b>Výkop</b><span>bagrom 1–3,5&nbsp;t, zemina naložená a odvezená</span></a>
+    </li>
+  </ol>
+</section>
+
+<section class="prace" aria-label="Čo robíme">
+  {% for s in data.sluzby %}
+  <article class="praca praca--{{ s.rozlozenie }}" id="{{ s.id }}">
+    <div class="praca__foto">
+      {{ img(s.foto, s.foto_alt, sizes=('100vw' if s.rozlozenie == 'siroke' else '(min-width: 64rem) 50vw, 100vw')) }}
+    </div>
+    <div class="praca__text">
+      <p class="praca__vrstva"><span class="vzorka vrstva--{{ s.vzorka }}" aria-hidden="true"><span class="vrstva__pas"></span></span>{{ s.vrstva }}</p>
+      <h2>{{ s.nazov }}</h2>
+      <p class="praca__popis">{{ s.text }}</p>
+      <ul class="praca__body" role="list">
+        {% for b in s.body %}<li>{{ b }}</li>{% endfor %}
+      </ul>
+    </div>
+  </article>
+  {% endfor %}
+</section>
+
+<section class="pozicovna" id="pozicovna" aria-labelledby="poz-nadpis">
+  <div class="pozicovna__hlava">
+    <h2 id="poz-nadpis">Požičovňa</h2>
+    <p>Vibračné dosky v&nbsp;štyroch hmotnostiach, pech a&nbsp;rezačky. Ľahšou doskou zhutníte piesok a&nbsp;dlažbu, ťažšou štrk a&nbsp;zásypy. Neviete, ktorú? Napíšte, čo hutníte, a&nbsp;poradíme.</p>
+  </div>
+
+  <figure class="mierka">
+    <figcaption>Vibračné dosky (žaby)</figcaption>
+    <ul class="mierka__stlpce" role="list">
+      {% for d in data.pozicovna.dosky %}
+      <li style="--h: {{ (d.kg / 400 * 100)|round(1) }}%">
+        <span class="mierka__stlpec" aria-hidden="true"></span>
+        <b>{{ d.kg }}&nbsp;kg</b>
+        {% if d.pozn %}<small>{{ d.pozn }}</small>{% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </figure>
+
+  <ul class="naradie" role="list">
+    {% for n in data.pozicovna.naradie %}
+    <li><h3>{{ n.nazov }}</h3><p>{{ n.text }}</p></li>
+    {% endfor %}
+  </ul>
+
+  <div class="stroje">
+    <div class="stroje__foto">
+      {{ img('bager-trava.jpg', 'Minibager s kabínou na tráve pri hadiciach', sizes='(min-width: 64rem) 40vw, 100vw') }}
+    </div>
+    <div class="stroje__text">
+      <h3>Stroje s&nbsp;obsluhou</h3>
+      <p>Bagre, nakladač a&nbsp;autodopravu máme s&nbsp;obsluhou, termín a&nbsp;rozsah sa dohodneme.</p>
+      <table class="stroje__tab">
+        <thead><tr><th scope="col">Stroj</th><th scope="col">Hmotnosť</th><th scope="col">Na čo</th></tr></thead>
+        <tbody>
+        {% for t in data.pozicovna.stroje %}<tr><th scope="row">{{ t.stroj }}</th><td>{{ t.param or '–' }}</td><td>{{ t.naco }}</td></tr>
+        {% endfor %}</tbody>
+      </table>
+      <a class="tlacidlo tlacidlo--tmave" href="#kontakt">Opýtať sa na voľný termín</a>
+    </div>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt" aria-labelledby="kontakt-nadpis">
+  <div class="kontakt__text">
+    <h2 id="kontakt-nadpis">Čo treba vykopať alebo vydláždiť?</h2>
+    <p>Napíšte pár viet, kde to je a&nbsp;čo potrebujete. Pomôže aj fotka pozemku z&nbsp;mobilu. Ozveme sa s&nbsp;termínom a&nbsp;cenou.</p>
+    <dl class="kontakt__udaje">
+      <div><dt>Telefón</dt><dd><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a></dd></div>
+      <div><dt>E-mail</dt><dd><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></dd></div>
+      <div><dt>Adresa</dt><dd>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Pri+Potoku+97%2F32+Bohunice" rel="noopener">Otvoriť v&nbsp;mapách</a></dd></div>
+      <div><dt>Pôsobíme</dt><dd>{{ site.oblast }}</dd></div>
+    </dl>
+  </div>
+  {% include "_formular.html" %}
+</section>
+{% endblock %}

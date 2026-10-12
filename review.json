@@ -1,0 +1,16 @@
+{
+  "znamka": 7,
+  "slabiny": [
+    "Mobilní hero a hlavička (390/360 px, buňka 1): pod tlačítky „Poslať dopyt“ a „Čo si môžete požičať“ zůstává prázdný tmavý pruh s osamocenými znaky „-“ a „--“. Vypadá to jako rozbitý nebo prázdný prvek (statistiky či pseudo-element), takže ho odstranit, aby hero končilo CTA a navazovala sekce „Od výkopu po dlažbu“. Na mobilu navíc v hlavičce chybí navigace (je tam jen tlačítko s telefonem). Doplnit aspoň kompaktní menu Práce / Požičovňa / Kontakt s cíli alespoň 40 px, protože půjčovna je druhý hlavní důvod návštěvy.",
+    "Fotky (hero, buňka 5 „Zemné a výkopové práce“, „Stroje s obsluhou“): všechno jsou britské stocky (SterlingOSB desky, dumper Whites, anglická zahrada) a stejný oranžový bagr KATO je v hero i v sekci 5, takže to působí jako jedna fotobanka. V sekci 5 dát jiný záběr (výkop rýhy nebo základů bez cizích nápisů, ideálně jiný stroj) a hero oříznout tak, aby na mobilu nezbyl jen pruh ve výšce kolem 120 px. V shrnutí Rafaelovi zdůraznit, že od klienta potřebujeme fotky vlastní techniky.",
+    "Typografie a značka (hlavička a nadpisy h1/h2): logo „TOMHOUSE“ je malý text v Oswaldu s drobným podtitulem a vedle silného konceptu se ztrácí. Použít motiv vrstev z řezu (4 proužky: dlažba / lôžko / štrk / výkop) jako značku vedle názvu a název zvětšit. V hero je Oswald verzálkami s velmi těsným řádkováním a háčky a čárky v „ZÁMKOVÁ DLAŽBA“ a „POŽIČOVŇA“ skoro sahají na řádek nad sebou. Řádkování h1/h2 zvednout na zhruba 1,05 a na PC zmenšit prázdné tmavé plochy pod sekcemi 3 a 4 (pod textem dlažby je volných zhruba 150 px)."
+  ],
+  "silne": [
+    "Silný koncept z oboru: řez pozemkem (výkop → štrk → lôžko → dlažba) jako hlavní ilustrace, a štítky POVRCH / POD POVRCHOM s texturou vrstvy ho nesou dál do sekcí.",
+    "Půjčovna jako sloupcový graf hmotností vibračních desek (60–400 kg) je chytrý a pravdivý prvek z briefu, žádné vymyšlené údaje.",
+    "Tmavé pozadí vychází z výslovného přání klienta, akcent je oranžový (stavební), ne zlatý. Béžové sekce rozbíjejí rytmus.",
+    "Obsah sedí na brief: technika 1/2/3,5 t, autodoprava do 3,5 t, bez rekonštrukcí. Fotky jsou poctivě označené jako ilustrační, přetečení nikde, data pod 1 MB.",
+    "Kontakt je silný: telefon v hlavičce, formulář s výběrem služby a přiložením fotky pozemku, podrobné kontakty vedle."
+  ],
+  "verdikt": "Koncept a obsah jsou dobré a vycházejí z oboru, k odeslání ale chybí řemeslo: rozbitý konec hero na mobilu, chybějící mobilní menu, opakovaný britský stock a slabá značka v hlavičce. Opravit a znovu zkontrolovat (verdikt: opravit)."
+}

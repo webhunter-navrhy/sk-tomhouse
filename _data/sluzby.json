@@ -1,0 +1,32 @@
+[
+  {
+    "id": "dlazba",
+    "nazov": "Zámková dlažba",
+    "vrstva": "povrch",
+    "foto": "dlazba-ruky.jpg",
+    "foto_alt": "Ruky kladú sivú zámkovú dlažbu do pripraveného lôžka",
+    "text": "Dvory, príjazdy, chodníky a plochy okolo domu. Dlažba vydrží len vtedy, keď je dobre urobený podklad, preto robíme všetko od výkopu: štrk, zhutnenie, lôžko, kladenie aj rezanie.",
+    "body": [
+      "výkop a odvoz pôvodnej zeminy",
+      "štrkový podklad a zhutnenie vibračnou doskou",
+      "kladenie a rezanie zámkovej dlažby"
+    ],
+    "vzorka": "dlazba",
+    "rozlozenie": "bok"
+  },
+  {
+    "id": "vykopy",
+    "nazov": "Zemné a výkopové práce",
+    "vrstva": "pod povrchom",
+    "foto": "ryha.jpg",
+    "foto_alt": "Lyžica bagra hĺbi ryhu do podkladu",
+    "text": "Výkopy pre základy, ryhy, terénne úpravy a príprava pozemku pred stavbou alebo dlažbou. Bagre 1 t, 2 t a 3,5 t sa zmestia aj do úzkeho dvora.",
+    "body": [
+      "výkopy základov a rýh",
+      "terénne úpravy a zarovnanie pozemku",
+      "nakladanie a odvoz zeminy vlastnou autodopravou"
+    ],
+    "vzorka": "zemina",
+    "rozlozenie": "siroke"
+  }
+]
