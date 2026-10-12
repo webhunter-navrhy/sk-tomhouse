@@ -1,9 +1,8 @@
 {
-  "url": "http://localhost:8791/sk-tomhouse/",
+  "url": "https://webhunter-navrhy.github.io/sk-tomhouse/",
   "ok": true,
   "chyby": [],
   "varovani": [
-    "Web má noindex (u ostrého webu pravděpodobně chyba)",
     "Dotykové cíle <40 px na mobilu: 4× (např. input \"\" 1×1; input \"\" 1×1; input \"\" 1×1; input \"\" 1×1)"
   ],
   "metriky": {
@@ -33,16 +32,16 @@
         "pocet_pretekajicich": 0
       }
     },
-    "preneseno_PC_MB": 0.9,
+    "preneseno_PC_MB": 0.88,
     "nejvetsi_obrazek_PC": {
-      "kB": 353,
-      "url": "http://localhost:8791/sk-tomhouse/img/ryha-1920.webp"
+      "kB": 354,
+      "url": "https://webhunter-navrhy.github.io/sk-tomhouse/img/ryha-1920.webp"
     },
     "snimku_PC": 8,
-    "preneseno_mobil_MB": 0.95,
+    "preneseno_mobil_MB": 0.92,
     "nejvetsi_obrazek_mobil": {
-      "kB": 292,
-      "url": "http://localhost:8791/sk-tomhouse/img/bager-trava-1280.webp"
+      "kB": 293,
+      "url": "https://webhunter-navrhy.github.io/sk-tomhouse/img/bager-trava-1280.webp"
     },
     "snimku_mobil": 8,
     "seo": {
